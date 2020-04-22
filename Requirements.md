@@ -2,7 +2,7 @@
 
 ## Login Page
 - The system shall allow for login using Google Cloud. On the login page, the application will display a button labeled “Log in with Google Cloud” which will deliver the user to the Firebase Google Cloud login page to be logged in with their Google account.
-- If the user doesn’t have a Google account, they can either create a Google account or use any other type of email through the Firebase Google Cloud login.
+- If the user doesn’t have a Google account, they can either create a Google account or use any other type of email through the Firebase Google Cloud login.  
 ![Home Page](https://github.com/HappyHobby/HappyHobby/blob/master/Resources/Wireframes/LogIn.png)
 
 ## Navigation Banner
@@ -13,7 +13,7 @@
 - If they click on the profile picture they can access their settings and log out by clicking the designated options through a dropdown menu
 - If the user selects “Settings” they can edit their interests/dislikes.
 - If the “Log Out” button is clicked it will deliver them to the login page and log them out of the application. 
-- The navigation banner will also contain a link to the FAQ section labeled “FAQ” located on the right side of the banner but to the left of the profile picture.
+- The navigation banner will also contain a link to the FAQ section labeled “FAQ” located on the right side of the banner but to the left of the profile picture.  
 ![Home Page](https://github.com/HappyHobby/HappyHobby/blob/master/Resources/Wireframes/NavBar.png)
 
 ## Profile Page
@@ -24,7 +24,7 @@
 - If no image exists, there will be a placeholder image. Title and text are required to be a valid hobby.
 - The user can select edit to remove any interests or dislikes
 - Remove icons will appear on each interest bubble.
-- There will always be an add button/circle for interests and dislikes section for the user to add a user’s interest.
+- There will always be an add button/circle for interests and dislikes section for the user to add a user’s interest.  
 ![Home Page](https://github.com/HappyHobby/HappyHobby/blob/master/Resources/Wireframes/Profile.png)
 ![Home Page](https://github.com/HappyHobby/HappyHobby/blob/master/Resources/Wireframes/ProfileEdit.png)
 
@@ -34,12 +34,12 @@
 - Each interest will have a list of related hobbies. From the user’s selected interests a set of hobbies will be displayed comprising all hobbies related to all interests they have liked which are not included within interests they have disliked referred to as the “Hobby Set”.
 - The set of potentially recommended hobbies will be determined by Hobby Set=(All interested hobbies)∩(All disliked hobbies)c
 - The displayed hobby will be randomly selected from the user’s Hobbies Set each day.
-- The randomization operation for each user will happen at 5 AM PST or when they update their preferred interests. 5 AM PST for the update because it coincides well with time zones globally (noon UTC).
+- The randomization operation for each user will happen at 5 AM PST or when they update their preferred interests. 5 AM PST for the update because it coincides well with time zones globally (noon UTC).  
 ![Home Page](https://github.com/HappyHobby/HappyHobby/blob/master/Resources/Wireframes/HomePage.png)
 
 ## FAQ Page
 - On the FAQ page, a list of questions and answers will be displayed in a list format.
-  - Example: How can you change interests?
+  - Example: How can you change interests?  
 ![Home Page](https://github.com/HappyHobby/HappyHobby/blob/master/Resources/Wireframes/FAQ.png)
 
 ## Requirements
