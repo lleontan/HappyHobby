@@ -10,49 +10,55 @@ https://www.psychologytoday.com/us/blog/media-spotlight/201703/bored-in-the-usa
 With a web application connecting people to enjoy fun new-found hobbies and interests, we can harness the connective power of technology to break down the mental barriers stopping people from starting new hobbies. We envision an application that allows users to receive daily notifications on a new hobby to pursue for the day based on their interests. As a form of accountability, there will be a place to share photos or comments with other users who are tackling the same hobby.
 
 ### Features
+#### Login Page
+- The system shall allow for login using Google Cloud. On the login page, the application will display a button labeled “Log in with Google Cloud” which will deliver the user to the Firebase Google Cloud login page to be logged in with their Google account.
+- If the user doesn’t have a Google account, they can either create a Google account or use any other type of email through the Firebase Google Cloud login.  
+![Home Page](https://github.com/HappyHobby/HappyHobby/blob/master/Resources/Wireframes/LogIn.png)
 
-#### Create Account
-- The user will create an account with an email account. If the user tries to create an account with the same email, an error message will pop up saying “Account with this email already exists”
-- There will be a double verification check for their password, if the passwords do not match when re-typed to confirm, an error message will pop up saying “Passwords do not match”
-- If the email has not been used to create an account on this platform before and the passwords match, the account will be created and this will take the user to a login page. 
-- Once the user clicks login, they will be redirected to the home page.
-#### Account Login
-- If the user types wrong email or password, the system will say “email or password does not exist, please try again”
-- If the login details are correct, user will be redirected to homepage
-- If the user checks box that says “remember login details”, the next time the user accesses the website - they will be redirected to homepage
-#### Interest Form
-- After signing up, the user can select different interests for which they would like the hobbies to be related to
-- There will also be a checklist to select dislikes, making sure none of the hobbies they are given relate to those topics
-- If the user selects no dislikes, their choice of interests will be used to determine the hobbies generated for them
-- If the user selects no interests, their dislikes will be used to generate their hobbies
-- If the user selects no interests or dislikes, they will be given any of the hobbies in the database
-- The ability to edit likes/dislikes can be found in their profile section
+#### Navigation Banner
+- The main content of each page will be displayed in a section spanning the width of the screen below the navigation banner. The height of this section will wrap its contents
+- The system shall have a navigation banner across all pages, a section of the width of the screen will be displayed above the page’s main content with a link labeled “HappyHobby” to the homepage on the banner’s left side.
+- When the user is logged in the navigation banner will display their Google Cloud profile picture.
+- They can access their profile by clicking on their google cloud profile picture. This icon will be located on the right side of the banner.
+- If they click on the profile picture they can access their settings and log out by clicking the designated options through a dropdown menu
+- If the user selects “Settings” they can edit their interests/dislikes.
+- If the “Log Out” button is clicked it will deliver them to the login page and log them out of the application. 
+- The navigation banner will also contain a link to the FAQ section labeled “FAQ” located on the right side of the banner but to the left of the profile picture.  
+![Home Page](https://github.com/HappyHobby/HappyHobby/blob/master/Resources/Wireframes/NavBar.png)
+
+#### Profile Page
+- The system shall have a profile page. On the profile page, the application will display a list of bubble selectors of interests. Users will not be able to create new interests to their profile if they don’t already exist in the list of interests. 
+- If the user logged in with Google, they will not have the option to change their photo, name, or password
+- Each interest will consist of a picture of the interest and a title of the interest
+- The user can hover over the interest to see a description
+- If no image exists, there will be a placeholder image. Title and text are required to be a valid hobby.
+- The user can select edit to remove any interests or dislikes
+- Remove icons will appear on each interest bubble.
+- There will always be an add button/circle for interests and dislikes section for the user to add a user’s interest.  
+![Home Page](https://github.com/HappyHobby/HappyHobby/blob/master/Resources/Wireframes/Profile.png)
+![Home Page](https://github.com/HappyHobby/HappyHobby/blob/master/Resources/Wireframes/ProfileEdit.png)
+
 #### Hobbies Page
-- The user will be presented with a random hobby for the day. This page will allow users to mark the activity complete and allow for comments and/or photo submission.
-- The list will contain:
-  - Image
-  - Name
-  - Text description
-  - Descriptive tags
-#### Profile
-- The user will be presented their profile page with their basic user information. Basic user information includes interests, social media links, and a profile picture.
-- The user will be presented with a recent activities list of all recent completions of activities. 
-- The user will be presented with an award system which will be a streak based point system to show how well this user is completing daily hobbies compared to other users.
-#### Hobby Submission
-- The user will be presented with a form allowing new hobby submissions for other users
-- The form will contain:
-  - A text field for the hobbies name
-  - A file input for the hobbies profile image
-  - A text field for the hobby’s description
-  - A checkbox allowing the user to tag categories for the hobby
-#### FAQ Page
-- The user will be able to navigate through questions and answers by clicking on a drop-down arrow. If they have a question that is unanswered, they can fill out a form that will go directly to us. 
-- If a user finds an answer to the question they were looking for they will be able to see it. 
-#### Navigation Bar
-- Links to
-  - Homepage
-  - Profile
-  - Signout
-  - Hobby
-  - FAQ
+- On the home page, the application will display a single hobby per day in the center of the screen.
+- The displayed hobby will consist of a picture of the hobby, title of the hobby, and text description taking up the whole screen width of the website minus margins, padding, and border.
+- Each interest will have a list of related hobbies. From the user’s selected interests a set of hobbies will be displayed comprising all hobbies related to all interests they have liked which are not included within interests they have disliked referred to as the “Hobby Set”.
+- The set of potentially recommended hobbies will be determined by Hobby Set=(All interested hobbies)∩(All disliked hobbies)c
+- The displayed hobby will be randomly selected from the user’s Hobbies Set each day.
+- The randomization operation for each user will happen at 5 AM PST or when they update their preferred interests. 5 AM PST for the update because it coincides well with time zones globally (noon UTC).  
+![Home Page](https://github.com/HappyHobby/HappyHobby/blob/master/Resources/Wireframes/HomePage.png)
 
+#### FAQ Page
+- On the FAQ page, a list of questions and answers will be displayed in a list format.
+  - Example: How can you change interests?  
+![Home Page](https://github.com/HappyHobby/HappyHobby/blob/master/Resources/Wireframes/FAQ.png)
+
+#### Requirements
+- What devices do your requirements say it will be able to run on?
+  - The website will be able to run on Google Chrome and Firefox browsers and display information on a phone, laptop or desktop-sized screen.
+- Who needs to be able to use your app? i.e In what ways does your app need to be accessible? (colors, screen readers, voice to text?)
+  - The application will be able to be used with screen readers
+- Where do you GET that data?
+  - Hobbies within each interest’s hobbies list will be populated by the developers.
+  - Interests will be populated by the developers.
+- If you are storing information, where are you storing it?
+  - All information will be stored within Firebase as JSON objects.
