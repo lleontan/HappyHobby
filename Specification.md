@@ -13,7 +13,7 @@ With a web application connecting people to enjoy fun new-found hobbies and inte
 #### Login Page
 - The system shall allow for login using Google Cloud. On the login page, the application will display a button labeled “Log in with Google Cloud” which will deliver the user to the Firebase Google Cloud login page to be logged in with their Google account.
 - If the user doesn’t have a Google account, the user can either create a Google account or use any other type of email through the Firebase Google Cloud login. 
-![Home Page](https://github.com/HappyHobby/HappyHobby/blob/master/Resources/Wireframes/LogIn.png)
+![Home Page](https://github.com/HappyHobby/HappyHobby/blob/master/Resources/Wireframes/Log_In.png)
 
 #### Navigation Banner
 - The main content of each page will be displayed in a section spanning the width of the screen below the navigation banner. The height of this section will wrap its contents.
