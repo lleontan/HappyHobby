@@ -1,0 +1,14 @@
+body{
+  font-size: .3em;
+  flex-direction: column;
+}
+
+@media (min-width: 600px) {
+
+}
+@media (min-width: 900px) {
+
+}
+@media (min-width: 1200px) {
+
+}
