@@ -1,4 +1,4 @@
-let constants = require('../utilities/constants');
+let constants = require('../../utilities/constants');
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { HashLink as Link } from 'react-router-hash-link';
