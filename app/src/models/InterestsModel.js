@@ -1,0 +1,6 @@
+{
+  interestName:"",
+  description:"",
+  imageUrl:"",
+  hobbies:[]
+}
