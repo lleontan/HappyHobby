@@ -1,7 +1,10 @@
 {
-  "name": "app",
+  "name": "happyhobby",
   "version": "0.1.0",
   "private": true,
+  "description": "To support and encourage people to engage in hobbies",
+  "license": "Creative Commons Attribution-NonCommercial 4.0 International",
+  "repository": "https://github.com/HappyHobby/HappyHobby.git",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
