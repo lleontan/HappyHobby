@@ -34,8 +34,8 @@ With a web application connecting people to enjoy fun new-found hobbies and inte
 - Each interest will consist of a picture of the interest and a title of the interest
   - The user can click on the interest to see the description. The description will appear as a modal in the middle of the screen.
   - If no image exists, there will be a placeholder image. Title and text are required to be a valid hobby.
-- The user can select edit to remove any interests or dislikes
-  - While an interest or dislike bubble is moused over an icon consisting of a white minus sign within a red circle located on the bubble’s bottom-left corner will be displayed. If the circular icon is clicked the interest or dislike will be removed from its corresponding list of interests or dislikes.
+- The user can select edit to change their interests.
+  - While the edit is clicked each interest or dislike bubble will have an icon consisting of a white minus sign within a red circle located on the bubble’s bottom-left corner will be displayed. If the circular icon is clicked the interest or dislike will be removed from its corresponding list of interests or dislikes.
   - While the user has not selected all available interests as a liked or disliked interest a circular icon consisting of a light-colored plus sign centered within a blue circle of size equal to the interest bubbles will be shown at the rightmost position within the lists of interests and disliked interests on the page. If this button is clicked a view allowing the user to add new interest to the bubble’s corresponding list will be displayed. The set of all hobbies not within either list is empty then no add interest buttons will be displayed in either the liked or disliked interest lists.
 ![Home Page](https://github.com/HappyHobby/HappyHobby/blob/master/Resources/Wireframes/Profile.png)
 ![Home Page](https://github.com/HappyHobby/HappyHobby/blob/master/Resources/Wireframes/ProfileEdit.png)
