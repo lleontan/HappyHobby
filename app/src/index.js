@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route } from 'react-router-dom'
+
 import './index.css';
 import App from './App';
 
 import firebase from 'firebase/app';
-import 'firebase/auth'; 
+import 'firebase/auth';
 import 'firebase/database';
 
 var firebaseConfig = {
@@ -20,8 +22,11 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 ReactDOM.render(
-  <React.StrictMode>
+  <BrowserRouter>
+
     <App />
-  </React.StrictMode>,
+    </BrowserRouter>
+
+  ,
   document.getElementById('root')
 );

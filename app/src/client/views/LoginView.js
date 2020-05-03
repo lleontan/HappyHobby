@@ -1,8 +1,10 @@
+import React,{Component} from "react";
+import ReactDOM from 'react-dom';
 // Arguments - N/A
 // Pre conditions - N/A
 // Post conditions - User is logged in
 // Returns a login component
-class LoginView {
+class LoginView extends Component{
   render() {
     return (
       <div>
@@ -11,3 +13,4 @@ class LoginView {
     )
   }
 }
+export default LoginView;

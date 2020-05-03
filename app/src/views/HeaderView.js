@@ -1,9 +1,9 @@
+let constants = require('../utilities/constants');
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 
-import '../../utilities/common.css';
-let constants = require('../../utilities/constants');
+import './common.css';
 
 /*
   This file contains the common navigation banner between different pages.
@@ -13,7 +13,7 @@ const HOMEPAGE_LINK = {
   text: "Home",
   link: "/"
 };
-class HeaderView extends Component{
+class HeaderView {
   render() {
     return (
       <div className='NavBanner'>
@@ -30,4 +30,4 @@ class HeaderView extends Component{
   }
 
 }
-export default HeaderView;
+module.exports.HeaderView = HeaderView;
